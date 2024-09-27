@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2a</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container mt-3">
+        <table class="table mb-5">
+            <thead>
+              <tr>
+                <th> <h4>Checkout</h4></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Product 1 <br>
+                    <small>Lorem ipsum dolor sit amet</small>
+                </td>
+                <td>$200</td>
+              </tr>
+              <tr>
+                <td>Product 2 <br>
+                <small>Lorem ipsum dolor sit amet</small></td>
+                <td>$120</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td>$320</td>
+              </tr>
+            </tbody>
+          </table>
+        <form action="/action_page.php">
+            <h4>Credit Card Details</h4>
+            <hr>
+            <div class="row m-2">
+                <div class="col-7">
+                    CARD HOLDER
+                </div>
+                <div class="col-5">
+                    EXXPIRATION DATE
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-7">
+                    <input type="card" class="form-control"  placeholder="Card Holder" >
+                </div>
+                <div class="col-3">
+                   <input type="number" class="form-control" id="mm" placeholder="MM" >
+                </div>
+                <div class="col-2">
+                    <input type="year" class="form-control" placeholder="YY">
+                </div>
+            </div>
+            <div class="row m-2">
+                <div class="col-8">
+                    CARD NUMBER
+                </div>
+                <div class="col-3">
+                    CVC
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <input type="number" class="form-control" placeholder="Card Number" >
+                </div>
+                <div class="col-4">
+                   <input type="number" class="form-control" id="mm" placeholder="CVC" name="cvc">
+                </div>
+            </div>
+
+            <div class="d-grid mt-4">
+                <button type="button" class="btn btn-primary btn-block">Proceed</button>
+              </div>
+        </form>
+      </div>
+      
+</body>
+</html>

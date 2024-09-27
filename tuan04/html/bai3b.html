@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 3a</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+    </div>
+    <!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+  
+        <div class="container mt-3">
+            <br>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs " role="tablist">
+              <li class="nav-item ">
+                <a class="nav-link active " data-bs-toggle="tab" href="#dangnhap" >ĐĂNG NHẬP</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#dangky">ĐĂNG KÝ</a>
+            
+                <button type="button" class="btn-close" data-bs-dismiss="modal" style="position: absolute; top: 10px;right: 5px;"></button>
+              </li>
+            </ul>
+          
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div id="dangnhap" class="container tab-pane active"><br>
+                <p>Vui lòng đăng nhập trước khi mua vé để tích lũy điểm cơ hội nhận thêm nhiều ưu đãi từ chương trình thành viên Galaxy Cimina.</p>
+                <form action="" class="was-validated">
+                    <input type="email" class="form-control" placeholder="Email" required>
+                    <input type="password" class="form-control mt-2 mb-2" placeholder="Mật khẩu" required>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </form>
+                <p>Quên mật khẩu?</a>
+                <div class="row">
+                    <button type="submit" class="btn btn-danger mb-3"> ĐĂNG NHẬP</button>
+                </div>
+                
+              </div>
+              <div id="dangky" class="container tab-pane fade"><br>
+                <form action="" class="was-validated">
+                    <div class="row mb-2">
+                        <div class="col">
+                        <input type="text" class="form-control" placeholder="Họ tên" required></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Số điện thoại" required></div>
+                        <div class="col-6">
+                            <input class="form-control" list="browsers" name="browser" id="browser" placeholder="Chọn giới tính" required >
+                            <datalist id="browsers">
+                            <option value="Nam">
+                            <option value="Nữ">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                        <input type="email" class="form-control" placeholder="Email" required></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="password" class="form-control" placeholder="Mật khẩu" required>
+                        </div>
+                        <div class="col-6">
+                            <input type="password" class="form-control" placeholder="Xác nhận mật khẩu" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <input class="form-control" list="browsers" name="browser" id="browser" placeholder="Chọn thành phố" required >
+                            <datalist id="browsers">
+                            <option value="Hà Nội">
+                            <option value="TP HCM">
+                            </datalist>
+                        </div>
+                        <div class="col-6">
+                            <input class="form-control" list="browsers" name="browser" id="browser" placeholder="Quận" required >
+                            <datalist id="browsers">
+                            <option value="1">
+                            <option value="2">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                        <input type="text" class="form-control" placeholder="Địa chỉ" required></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col">
+                        <input type="date" class="form-control" placeholder="Chọn ngày (dd/mm/yyyy)" required></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="../img/capcha.png" alt="" style="width: 85%;">
+                        </div>
+                        <div class="col-6">
+                            <input type="text" class="form-control" placeholder="Nhập mã captcha" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p>Tôi đã đọc và đồng ý với <b>CHÍNH SÁCH</b> của chương trình.</p>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <button type="submit" class="btn btn-danger" style="width: 100%;"> ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    
+                   
+                </form>
+              </div>
+            </div>
+          </div>
+        
+  
+      </div>
+    </div>
+  </div>
+</body>
+</html>
